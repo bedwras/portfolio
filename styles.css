@@ -27,7 +27,7 @@
 }
 
 #project-btn {
-    border-style: none;
+    border-style: none;"
     border: 2px solid #1f1f1f;
     border-radius: 6px;;
     font-weight: 500;
@@ -197,6 +197,10 @@ img.emoji {
   .hhead {
     border: 1px solid black;
   }
+
+.title {
+  font-size: 30px;
+}
   
 /*--------------*\
 |                |
