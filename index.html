@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bedwras | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id="lightstylsheet" href="styles.css">
     <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,9 @@
             <a id="nav-link" href="index.html"><li>Home</li></a>
             <a id="nav-link" href="#footer"><li>Contact</li></a>
             <a id="nav-link" href="projects.html"><li>Projects</li></a>
+            <!--<button type="checkbox" id="toggle-theme">Toggle Mode</button>
+            <label for="darkToggle">-->
+            
         </ul>
     </nav>
 <!--end navbar-->
@@ -30,47 +33,49 @@
 <section id="projects">
     <div class="projects-container">
         <div class="project-tile">
+            <h3 class="project-title">Desktop Social Media UI Mockup</h3>
             <a href="https://socialmediauidemo.vercel.app/" title="View Project" class="project-preview">
             <img class="pagepreview" src="previewforum - Copy.JPG">
             </a>
-            <h3 class="project-title">Desktop Social Media UI Mockup</h3>
             <p class="project-description">A simple Social Media UI including posts, like buttons, and media.</p>
             <a id="project-btn" href="https://socialmediauidemo.vercel.app/" title="View Project" >View Project</a>
         </div>
 
       <div class="project-tile">
+        <h3 class="project-title">Mobile Social Media UI Mockup</h3>
             <a href="https://socialmobileui.vercel.app/" title="View Project" class="project-preview">
-            <img class="pagepreview" src="IMG_0031.jpeg">
+            <img class="pagepreview" src="mpreview.png">
             </a>
-            <h3 class="project-title">Mobile Social Media UI Mockup</h3>
             <p class="project-description">Social media UI designed for mobile devices, with a trends page, and home page.</p>
             <a id="project-btn" href="https://socialmobileui.vercel.app/" title="View Project" >View Project</a>
-        </div>
-
+        </div> 
+            
         <div class="project-tile">
+            <h3 class="project-title">Messaging App UI</h3>
             <a href="https://messagingappui.vercel.app/" title="View Project" class="project-preview">
             <img class="pagepreview" src="messagingappui.JPG">
         </a>
-            <h3 class="project-title">Messaging App UI</h3>
+           
             <p class="project-description">A simple messaging app UI made in HTML and CSS.</p>
             <a id="project-btn" href="https://messagingappui.vercel.app/" title="View Project" >View Project</a>
+            
         </div>
 
             <div class="project-tile">
+                <h3 class="project-title">Documentation UI Model</h3>
                 <a href="https://documentationtest.vercel.app/" title="View Project" class="project-preview">
                 <img class="pagepreview" src="documentationpreview.JPG">
             </a>
-                <h3 class="project-title">Documentation UI Model</h3>
                 <p class="project-description">A documentation made in HTML and CSS.</p>
                 <a id="project-btn" href="https://documentationtest.vercel.app" title="View Project" >View Project</a>
             </div>
 
 
             <div class="project-tile">
+                <h3 class="project-title">Product Page Demo</h3>
                 <a href="https://vacuumpage.vercel.app/" title="View Project" class="project-preview">
                 <img class="pagepreview" src="productpreview.JPG">
                 </a>
-            <h3 class="project-title">Product Page Demo</h3>
             <p class="project-description">A simple product landing page for a company.</p>
             <a id="project-btn" href="https://vacuumpage.vercel.app" title="View Project" >View Project</a>
               </div>
@@ -81,7 +86,7 @@
 </section>
 <section id="footer">
     <div class="footer">
-        <p class="footer-center">Contact</p>
+        <p class="footer-center">Extra info</p>
         <p>My links: <a class="link" id="profile-link" href="https://github.com/bedwras/" title="View GitHub"  target="_blank">GitHub</a> | <a class="link" href="https://twitter.com/bedwras" title="Twitter" target="_blank">Twitter</a> | <a class="link" href="https://github.com/twitter/twemoji" title="View Twemoji GitHub" target="_blank"> 🐦 Emojis by Twemoji❤️</a></p>
     </div>
 </section>
@@ -90,4 +95,5 @@
 <script>
     twemoji.parse(document.body);
   </script>
+  <script src="index.js"></script>
 </html>

@@ -16,7 +16,7 @@
 .project-tile {
     max-height: 800px;
     max-width: 800px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     padding: 50px;
     font-size: 30px;
     text-align: center;
@@ -24,17 +24,19 @@
     margin-left: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow: scroll;
 }
 
 #project-btn {
-    border-style: none;"
-    border: 2px solid #1f1f1f;
+    border-style: none;
+    border: 2px solid black;
     border-radius: 6px;;
     font-weight: 500;
     font-size: 16px;
     color: rgb(15, 119, 238);
     padding: 10px;
     background-color: #ffffff;
+
 }
 
 .welcome-box {
@@ -83,10 +85,12 @@ body {
 }
 
 img {
-    max-height: 100%;
-    max-width: 100%;
-    
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
 }
+
 
 /*--------------*\
 |                |
@@ -101,14 +105,14 @@ img {
     border: 2px solid white;
     padding: 10px;
     z-index: 1001;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     overflow: hidden;
     justify-content: center;
 }
 
 #nav-link {
     border-style: none;
-    border: 2px solid #1f1f1f;
+    border: 2px solid #d8d8d8;
     border-radius: 6px;;
     font-weight: 500;
     font-size: 16px;
@@ -129,13 +133,13 @@ img {
 }
 
 #nav-link:hover, #project-btn:hover, .link:hover {
-    background-color:#c2c2c2 ;  
+    background-color:#e7e7e7 ;  
     cursor: pointer;
     transition-duration: 300ms;
 }
 
 #nav-link:active, #project-btn:active {
-    background-color: #adadad;
+    opacity: 40%;
     transition-duration: 300ms;
 }
 
@@ -232,4 +236,250 @@ img.emoji {
    }
    tr {
     background-color: #ebebeb;
+   }
+
+
+   /* dark mode */
+
+   
+/*--------------*\
+|                |
+|      PAGE      |
+|                |
+\*--------------*/
+
+#projects.dark {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1px;
+    align-content: center;
+    padding: 25px;
+}
+
+.project-tile.dark {
+    max-height: 800px;
+    max-width: 800px;
+    border: 1px solid rgb(43, 43, 43);
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: scroll;
+}
+
+#project-btn.dark {
+    border-style: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 6px;;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(15, 119, 238);
+    padding: 10px;
+    background-color: #222222;
+
+}
+
+.welcome-box.dark {
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 10px;
+}
+
+.info-container.dark {
+    object-fit: contain;
+    border-radius: 6px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 10px;
+}
+
+body.dark {
+    background-color: #1c1c1c;
+    color: rgb(255, 255, 255);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.footer.dark {
+    bottom: 0px;
+    background-color: #141414;
+    border: 1px solid #141414;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.projects-container.dark {
+    /*border: 1px solid black;      only used for testing purposes */
+}
+
+img {
+    max-height: 80%;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+}
+
+
+/*--------------*\
+|                |
+|     navbar     |
+|                |
+\*--------------*/
+
+#navbar.dark {
+    position: sticky;
+    top: 0px;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    z-index: 1001;
+    background-color: #212121;
+    overflow: hidden;
+    justify-content: center;
+}
+
+#nav-link.dark {
+    border-style: none;
+    border: 2px solid #1f1f1f;
+    border-radius: 6px;;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(15, 119, 238);
+    padding: 10px;
+    background: none;
+    user-select: none;
+    text-decoration: none;
+    float: left;
+    margin: 2px;
+}
+
+.nav-list.dark {
+    font-style: none;
+    list-style: none;
+    display: inline;
+
+}
+
+#nav-link:hover.dark, #project-btn:hover.dark, .link:hover.dark {
+    background-color:#252525 ;  
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+#nav-link:active.dark, #project-btn:active.dark {
+    opacity: 40%;
+    transition-duration: 300ms;
+}
+
+/*--------------*\
+|                |
+|      TEXT      |
+|                |
+\*--------------*/
+
+a.dark, .link.dark {
+    padding: 2px;
+    color: rgb(15, 119, 238);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+a:active.dark, .link:active.dark {
+    /*background-color: rgba(98, 98, 98, 0.734);*/
+    transition-duration: 0.2s;
+    filter: brightness(50%);
+}
+
+a:hover.dark, link:hover.dark {
+    transition-duration: 0.2s;
+    filter: brightness(80%);
+}
+
+.name.dark, .info-container.dark, .project-title.dark, .project-description.dark, .title.dark, .footer-center.dark {
+    text-align: center;
+}
+
+.name.dark {
+    font-family: 'Carter One', cursive;
+    font-size: 65px;
+    padding: 5px;
+}
+
+.project-description.dark {
+    font-size: 16px;
+}
+
+img.emoji.dark {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+ @media screen and (min-width: 400px) {
+    .name {
+        font-size: 55px;
+    }
+  }
+
+
+  .hdata.dark {
+    border: 1px solid rgb(255, 255, 255);
+   }
+  .hhead.dark {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+.title.dark {
+  font-size: 30px;
+}
+  
+/*--------------*\
+|                |
+|     TABLES     |
+|                |
+\*--------------*/
+    table.dark {
+    background-color: #1f1f1f;
+   }
+
+   .listdata.dark {
+    max-width: 100%;
+    height:100%;
+    border:1px solid;
+    border-collapse: separate;
+    padding: 6px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+   }
+   .listdata.dark th.dark {
+    border:1px solid #262626;
+    padding:6px;
+    background-color: #292929;
+   }
+   .listdata.dark td.dark {
+    border:2px solid #282828;
+    padding:6px;
+   }
+   th.dark {
+    background-color: #262626;
+   }
+   tr.dark {
+    background-color: #262626;
    }
